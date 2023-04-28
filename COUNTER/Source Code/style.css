@@ -1,0 +1,85 @@
+:root {
+    --body-bg-colour: #f1f5f8;
+    --btn-bg-colour: blue;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--body-bg-colour);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.conter {
+    padding: 2rem;
+    border: 2px solid black;
+}
+
+.cont-Number {
+    font-size: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+    background-color: var(--btn-bg-colour);
+    border: 2px solid black;
+    color: white;
+
+}
+
+.Increase {
+    background-color: green;
+}
+
+.Decrease {
+    background-color: red;
+}
+
+
+@media screen and (max-width: 471px) {
+    html {
+        font-size: 50%;
+    }
+
+}
+
+@media screen and (max-width: 340px) {
+    html {
+        font-size: 47%;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .btns {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .btn {
+        margin-top: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+    html {
+        font-size: 85%;
+    }
+}
